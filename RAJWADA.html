@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rajwada Family Restaurant</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background-image:url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5");
+background-size:cover;
+background-position:center;
+}
+
+/* Dark overlay */
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+/* Logo container */
+
+.logo-box{
+position:relative;
+text-align:center;
+color:white;
+padding:40px 60px;
+border-radius:15px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+box-shadow:0 0 40px rgba(0,0,0,0.6);
+animation:fadeIn 1.5s ease;
+}
+
+/* Restaurant logo circle */
+
+.logo{
+width:110px;
+height:110px;
+border-radius:50%;
+background:linear-gradient(135deg,#ffcc70,#ff7b00);
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:40px;
+font-weight:bold;
+margin:auto;
+color:#5c0000;
+box-shadow:0 0 20px rgba(255,200,100,0.7);
+}
+
+/* Restaurant name */
+
+h1{
+margin-top:20px;
+font-size:34px;
+letter-spacing:2px;
+color:#ffd27f;
+text-shadow:0 0 10px rgba(255,200,120,0.7);
+}
+
+/* Tagline */
+
+p{
+margin-top:10px;
+font-size:16px;
+color:#eee;
+}
+
+/* Button */
+
+button{
+margin-top:25px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:linear-gradient(45deg,#ff7b00,#ffcc70);
+color:#5c0000;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px rgba(255,200,120,0.9);
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="logo-box">
+
+<div class="logo">
+🍽
+</div>
+
+<h1>Rajwada Family Restaurant</h1>
+
+<p>Delicious Food • Family Dining • Royal Experience</p>
+
+<button onclick="location.href='service.html'">
+Enter Restaurant
+</button>
+
+</div>
+
+</body>
+</html>

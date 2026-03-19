@@ -7,6 +7,28 @@
 <title>Rajwada Family Restaurant</title>
 
 <style>
+.nav-buttons{
+margin-top:25px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+.nav-buttons a{
+text-decoration:none;
+padding:10px 20px;
+border-radius:25px;
+background:linear-gradient(45deg,#ff7b00,#ffcc70);
+color:#5c0000;
+font-weight:bold;
+transition:0.3s;
+}
+
+.nav-buttons a:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px rgba(255,200,120,0.9);
+}
 
 *{
 margin:0;
@@ -136,10 +158,19 @@ transform:translateY(0);
 
 <p>Delicious Food • Family Dining • Royal Experience</p>
 
-<button onclick="location.href='service.html'">
-Enter Restaurant
-</button>
+<div class="nav-buttons">
 
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="services.html">Services</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+<a href="offers.html">Offers</a>
+<a href="location.html">Location</a>
+<a href="thankyou.html">Thank You </a>
+
+</div>
 </div>
 
 </body>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You - Rajwada Restaurant</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#8b0000,#d32f2f);
+}
+
+.container{
+background:white;
+padding:35px;
+width:350px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+text-align:center;
+animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+color:#8b0000;
+margin-bottom:10px;
+}
+
+p{
+color:#555;
+margin-bottom:20px;
+}
+
+.feedback-title{
+margin-top:15px;
+margin-bottom:10px;
+font-weight:bold;
+color:#333;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+textarea{
+resize:none;
+}
+
+.rating{
+margin:10px 0;
+}
+
+.rating input{
+display:none;
+}
+
+.rating label{
+font-size:24px;
+color:#ccc;
+cursor:pointer;
+transition:0.3s;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label{
+color:gold;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+background:#8b0000;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#b71c1c;
+transform:scale(1.05);
+}
+
+.thank-btn{
+background:#444;
+margin-top:15px;
+}
+
+.thank-btn:hover{
+background:#000;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Thank You! </h1>
+
+<p>Your request has been submitted successfully.<br>
+We hope you enjoyed your visit at <b>Rajwada Restaurant</b>.</p>
+
+<div class="feedback-title">Leave Your Feedback</div>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email">
+
+<div class="rating">
+<input type="radio" name="star" id="star5">
+<label for="star5">★</label>
+
+<input type="radio" name="star" id="star4">
+<label for="star4">★</label>
+
+<input type="radio" name="star" id="star3">
+<label for="star3">★</label>
+
+<input type="radio" name="star" id="star2">
+<label for="star2">★</label>
+
+<input type="radio" name="star" id="star1">
+<label for="star1">★</label>
+</div>
+
+<textarea rows="4" placeholder="Write your feedback here..."></textarea>
+
+<button type="submit">Submit Feedback</button>
+
+</form>
+
+<button class="thank-btn">Visit Again</button>
+
+</div>
+
+</body>
+</html>
